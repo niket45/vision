@@ -1,0 +1,22 @@
+<!-- Label Studio Labeling Interface Configuration
+     Copy this XML into:
+     Project Settings → Labeling Interface → Code tab
+-->
+
+<View>
+  <Style>
+    .lsf-main-content {background: #1a1a2e;}
+    .label-button {font-weight: bold; font-size: 13px;}
+  </Style>
+
+  <Image name="image" value="$image" zoom="true" zoomControl="true" rotateControl="false"/>
+
+  <RectangleLabels name="label" toName="image" strokeWidth="2" showInline="true">
+    <Label value="bubble"    background="#FF6B6B" hotkey="1"/>
+    <Label value="narration" background="#4ECDC4" hotkey="2"/>
+    <Label value="text"      background="#45B7D1" hotkey="3"/>
+    <Label value="sfx"       background="#96CEB4" hotkey="4"/>
+    <Label value="panel"     background="#FFEAA7" hotkey="5"/>
+  </RectangleLabels>
+
+</View>
