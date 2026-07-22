@@ -1,4 +1,5 @@
 """Detector module."""
 from .base import BaseDetector
+from .yolo import YoloDetector
 
-__all__ = ["BaseDetector"]
+__all__ = ["BaseDetector", "YoloDetector"]
