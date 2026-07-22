@@ -3,8 +3,18 @@
 # This file tracks all known raw data sources.
 # Annotated dataset releases are versioned separately in datasets/annotated/
 
-version: "0.1"
+version: "1.0"
 format: "scroll"   # scroll | page — determines how pages are processed
+
+annotation_status: "auto-labels-v1.0"   # GroundingDINO-Tiny, Colab T4, 2026-07-22
+annotation_stats:
+  label_files: 1238
+  images_with_detections: 1048
+  empty_images: 190
+  total_boxes: 2888
+  classes:
+    bubble: 1654
+    narration: 1234
 
 sources:
   - id: "eleceed"
