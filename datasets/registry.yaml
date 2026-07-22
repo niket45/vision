@@ -49,28 +49,28 @@ sources:
         path: "datasets/raw/star-embracing-swordmaster/Star-Embracing Swordmaster 125"
         pages: 101
 
-  - id: "chapter-unknown"
-    title: "UNKNOWN — title to be confirmed"    # TODO: identify this manga
-    format: scroll                               # assumed scroll; verify
-    language: unknown
+  - id: "god-of-martial-arts"
+    title: "God of Martial Arts"
+    format: scroll
+    language: zh        # Chinese manhua
     chapters:
-      - id: "unk-1190"
-        path: "datasets/raw/chapter-unknown/chapter 1190"
+      - id: "goma-1190"
+        path: "datasets/raw/god-of-martial-arts/chapter 1190"
         pages: 33
-      - id: "unk-1191"
-        path: "datasets/raw/chapter-unknown/chapter 1191"
+      - id: "goma-1191"
+        path: "datasets/raw/god-of-martial-arts/chapter 1191"
         pages: 30
-      - id: "unk-1192"
-        path: "datasets/raw/chapter-unknown/chapter 1192"
+      - id: "goma-1192"
+        path: "datasets/raw/god-of-martial-arts/chapter 1192"
         pages: 31
-      - id: "unk-1193"
-        path: "datasets/raw/chapter-unknown/chapter 1193"
+      - id: "goma-1193"
+        path: "datasets/raw/god-of-martial-arts/chapter 1193"
         pages: 30
-      - id: "unk-1194"
-        path: "datasets/raw/chapter-unknown/chapter 1194"
+      - id: "goma-1194"
+        path: "datasets/raw/god-of-martial-arts/chapter 1194"
         pages: 30
-      - id: "unk-1195"
-        path: "datasets/raw/chapter-unknown/chapter 1195"
+      - id: "goma-1195"
+        path: "datasets/raw/god-of-martial-arts/chapter 1195"
         pages: 30
 
 summary:
