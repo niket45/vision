@@ -1,0 +1,85 @@
+# Vision Engine Dataset Registry
+# ================================
+# This file tracks all known raw data sources.
+# Annotated dataset releases are versioned separately in datasets/annotated/
+
+version: "0.1"
+format: "scroll"   # scroll | page — determines how pages are processed
+
+sources:
+  - id: "eleceed"
+    title: "Eleceed"
+    format: scroll
+    language: ko        # Korean manhwa
+    chapters:
+      - id: "eleceed-400"
+        path: "datasets/raw/eleceed/eleceed 400"
+        pages: 129
+      - id: "eleceed-401"
+        path: "datasets/raw/eleceed/eleceed 401"
+        pages: 113
+      - id: "eleceed-402"
+        path: "datasets/raw/eleceed/eleceed 402"
+        pages: 126
+      - id: "eleceed-403"
+        path: "datasets/raw/eleceed/eleceed 403"
+        pages: 87
+      - id: "eleceed-404"
+        path: "datasets/raw/eleceed/eleceed 404"
+        pages: 104
+
+  - id: "star-embracing-swordmaster"
+    title: "Star-Embracing Swordmaster"
+    format: scroll
+    language: ko        # Korean manhwa
+    chapters:
+      - id: "ses-121"
+        path: "datasets/raw/star-embracing-swordmaster/Star-Embracing Swordmaster 121"
+        pages: 90
+      - id: "ses-122"
+        path: "datasets/raw/star-embracing-swordmaster/Star-Embracing Swordmaster 122"
+        pages: 93
+      - id: "ses-123"
+        path: "datasets/raw/star-embracing-swordmaster/Star-Embracing Swordmaster 123"
+        pages: 109
+      - id: "ses-124"
+        path: "datasets/raw/star-embracing-swordmaster/Star-Embracing Swordmaster 124"
+        pages: 101
+      - id: "ses-125"
+        path: "datasets/raw/star-embracing-swordmaster/Star-Embracing Swordmaster 125"
+        pages: 101
+
+  - id: "chapter-unknown"
+    title: "UNKNOWN — title to be confirmed"    # TODO: identify this manga
+    format: scroll                               # assumed scroll; verify
+    language: unknown
+    chapters:
+      - id: "unk-1190"
+        path: "datasets/raw/chapter-unknown/chapter 1190"
+        pages: 33
+      - id: "unk-1191"
+        path: "datasets/raw/chapter-unknown/chapter 1191"
+        pages: 30
+      - id: "unk-1192"
+        path: "datasets/raw/chapter-unknown/chapter 1192"
+        pages: 31
+      - id: "unk-1193"
+        path: "datasets/raw/chapter-unknown/chapter 1193"
+        pages: 30
+      - id: "unk-1194"
+        path: "datasets/raw/chapter-unknown/chapter 1194"
+        pages: 30
+      - id: "unk-1195"
+        path: "datasets/raw/chapter-unknown/chapter 1195"
+        pages: 30
+
+summary:
+  total_sources: 3
+  total_chapters: 16
+  total_pages: 1237
+  annotation_status: "unannotated"
+  annotation_classes:
+    priority_1: ["bubble", "narration"]
+    priority_2: ["text"]
+    priority_3: ["sfx"]
+    priority_4: ["panel"]
