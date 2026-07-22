@@ -183,7 +183,7 @@ def run(
             results = processor.post_process_grounded_object_detection(
                 outputs,
                 inputs.input_ids,
-                box_threshold=conf_threshold,
+                threshold=conf_threshold,
                 text_threshold=conf_threshold,
                 target_sizes=[(img_h, img_w)],
             )[0]
@@ -193,7 +193,7 @@ def run(
             for box, score, label_text in zip(
                 results["boxes"].tolist(),
                 results["scores"].tolist(),
-                results["labels"],
+                results.get("text_labels", results.get("labels", [])),
             ):
                 # Map label text to class
                 matched_class = None
